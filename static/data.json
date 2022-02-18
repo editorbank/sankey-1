@@ -1,0 +1,29 @@
+{
+    "nodes":{
+        "Красный": { "color": "red" },
+        "Зелёный": { "color": "lightgreen" },
+        "Синий": { "color": "lightblue"},
+        "Начало": { "color": "silver", "title": "Само начало!"},
+        "Конец" : { "color": "gold", "title": "Полный конец!" }
+    },
+    "links": [
+
+        { "from": "Начало", "to": "Красный", "flow": 2 },
+        { "from": "Красный", "to": "Конец",  "flow": 1 },
+        { "from": "Красный", "to": "Синий", "flow": 1 },
+        { "from": "Начало", "to": "Конец", "flow": 3 },
+        { "from": "Начало", "to": "Зелёный", "flow": 2 },
+        { "from": "Зелёный", "to": "Конец",  "flow": 1 },
+        { "from": "Зелёный", "to": "Синий", "flow": 1 },
+        { "from": "Начало", "to": "Синий", "flow": 5},
+        { "from": "Синий", "to": "Конец",  "flow": 7}
+    ],
+    "style": {
+        "chart": { "color": "brown", "borderWidth": "1px", "borderStyle":"dotted", "borderColor": "gray", "backgroundColor": "#eee" },
+        "node": {"borderWidth": "1px", "borderColor": "transparent" },
+        "colorMode": "gradient",
+        "flowColorDefault": "lightgray"
+    },
+    "title": "Пример Сэнкей Диаграммы"
+
+}
